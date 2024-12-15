@@ -1,43 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
-      }
-      h1 {
-        color: #333;
-      }
-      .project {
-        margin-bottom: 20px;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        .project {
+            margin-bottom: 30px;
+        }
+        .project-title {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .technologies {
+            font-style: italic;
+            color: #555;
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <h1>My Projects</h1>
+    <!-- Project 1 -->
     <div class="project">
-      <h2>Project 1: MERN Stack Deployment</h2>
-      <p>
-        Containerized a MERN stack application and deployed it using Kubernetes.
-      </p>
-      <a href="https://github.com/yourusername/MERNApp" target="_blank"
-        >View on GitHub</a
-      >
+        <div class="project-title">
+            <a href="https://github.com/yourusername/MERNApp" target="_blank">Containerizing a MERN Stack App and Deploying using Kubernetes</a>
+        </div>
+        <p>◦ Containerized a MERN stack application and deployed it using Kubernetes for scalable and efficient orchestration.</p>
+        <p>◦ Monitored deployments using Prometheus and Grafana, and automated Docker image push to DockerHub with shell scripting.</p>
+        <p class="technologies">Technologies: Shell Scripting, Python, React, Flask, MongoDB, Jenkins, Docker, Kubernetes.</p>
     </div>
+    <!-- Project 2 -->
     <div class="project">
-      <h2>Project 2: Story Blog with CI/CD</h2>
-      <p>
-        Developed a React application and automated deployments using Jenkins
-        pipelines.
-      </p>
-      <a href="https://github.com/yourusername/DevOpsStory" target="_blank"
-        >View on GitHub</a
-      >
+        <div class="project-title">
+            <a href="https://github.com/yourusername/DevOpsStory" target="_blank">Story Blog Deployment with CI/CD</a>
+        </div>
+        <p>◦ Designed and implemented a story blog by building a React Docker Image with a Jenkins Pipeline.</p>
+        <p class="technologies">Technologies: Jenkins, Docker, Kubernetes, React.</p>
     </div>
-    <!-- Add more projects as needed -->
-  </body>
+    <!-- Project 3 -->
+    <div class="project">
+        <div class="project-title">Resource Usage Tracking in AWS</div>
+        <p>◦ Resource tracking of AWS services like EC2, IAM, and S3 using shell scripting.</p>
+        <p class="technologies">Technologies: Shell Scripting, AWS EC2.</p>
+    </div>
+    <!-- Project 4 -->
+    <div class="project">
+        <div class="project-title">
+            <a href="https://github.com/yourusername/LearnerSpace" target="_blank">LearnerSpace - A Serverless Approach for an E-Learning Platform</a>
+        </div>
+        <p>◦ Built a full-stack e-learning platform where users can purchase courses and learn using AWS Amplify, AppSync, and Stripe.</p>
+        <p class="technologies">Technologies: Amplify CLI, AWS Amplify React Library, GraphQL API, DynamoDB, Lambda, S3, React, Stripe.</p>
+    </div>
+    <!-- Project 5 -->
+    <div class="project">
+        <div class="project-title">
+            <a href="https://github.com/yourusername/Media-Insight" target="_blank">Media Insights</a>
+        </div>
+        <p>◦ Designed and developed ML models for Text-to-Image generation, Image description generation, and Text Summarization.</p>
+        <p>◦ Containerized the frontend, backend, database, and ML models.</p>
+        <p class="technologies">Technologies: Flask, Kafka, MongoDB, Docker, Python, React.</p>
+    </div>
+    <!-- Project 6 -->
+    <div class="project">
+        <div class="project-title">Computation Offloading of Resource Intensive Applications into Cloud</div>
+        <p>◦ Offloaded resource-intensive applications like video conversion from smartphones to the cloud.</p>
+        <p class="technologies">Technologies: Python, AWS EC2, S3.</p>
+    </div>
+</body>
 </html>
