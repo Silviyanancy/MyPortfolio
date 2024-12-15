@@ -4,75 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
             line-height: 1.6;
         }
-        h1 {
-            color: #333;
+
+        header {
+            background: #007acc;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
         }
+
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #007acc;
+        }
+
         .project {
-            margin-bottom: 30px;
+            background: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+
         .project-title {
-            font-size: 1.2em;
-            font-weight: bold;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
         }
+
+        .project-title a {
+            text-decoration: none;
+            color: #007acc;
+        }
+
+        .project-title a:hover {
+            text-decoration: underline;
+        }
+
         .technologies {
             font-style: italic;
             color: #555;
         }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #007acc;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
-    <h1>My Projects</h1>
-    <!-- Project 1 -->
-    <div class="project">
-        <div class="project-title">
-            <a href="https://github.com/yourusername/MERNApp" target="_blank">Containerizing a MERN Stack App and Deploying using Kubernetes</a>
+    <header>
+        <h1>My Portfolio</h1>
+        <p>Welcome to my portfolio. Explore my projects below!</p>
+    </header>
+
+    <div class="container">
+        <!-- Project 1 -->
+        <div class="project">
+            <div class="project-title">
+                <a href="https://github.com/yourusername/MERNApp" target="_blank">Containerizing a MERN Stack App and Deploying using Kubernetes</a>
+            </div>
+            <p>Containerized a MERN stack application and deployed it using Kubernetes for scalable and efficient orchestration.</p>
+            <p>Monitored deployments using Prometheus and Grafana, and automated Docker image push to DockerHub with shell scripting.</p>
+            <p class="technologies">Technologies: Shell Scripting, Python, React, Flask, MongoDB, Jenkins, Docker, Kubernetes.</p>
         </div>
-        <p>◦ Containerized a MERN stack application and deployed it using Kubernetes for scalable and efficient orchestration.</p>
-        <p>◦ Monitored deployments using Prometheus and Grafana, and automated Docker image push to DockerHub with shell scripting.</p>
-        <p class="technologies">Technologies: Shell Scripting, Python, React, Flask, MongoDB, Jenkins, Docker, Kubernetes.</p>
-    </div>
-    <!-- Project 2 -->
-    <div class="project">
-        <div class="project-title">
-            <a href="https://github.com/yourusername/DevOpsStory" target="_blank">Story Blog Deployment with CI/CD</a>
+
+        <!-- Add more projects below in the same format -->
+
+        <div class="project">
+            <div class="project-title">
+                <a href="https://github.com/yourusername/DevOpsStory" target="_blank">Story Blog Deployment with CI/CD</a>
+            </div>
+            <p>Designed and implemented a story blog by building a React Docker Image with a Jenkins Pipeline.</p>
+            <p class="technologies">Technologies: Jenkins, Docker, Kubernetes, React.</p>
         </div>
-        <p>◦ Designed and implemented a story blog by building a React Docker Image with a Jenkins Pipeline.</p>
-        <p class="technologies">Technologies: Jenkins, Docker, Kubernetes, React.</p>
     </div>
-    <!-- Project 3 -->
-    <div class="project">
-        <div class="project-title">Resource Usage Tracking in AWS</div>
-        <p>◦ Resource tracking of AWS services like EC2, IAM, and S3 using shell scripting.</p>
-        <p class="technologies">Technologies: Shell Scripting, AWS EC2.</p>
-    </div>
-    <!-- Project 4 -->
-    <div class="project">
-        <div class="project-title">
-            <a href="https://github.com/yourusername/LearnerSpace" target="_blank">LearnerSpace - A Serverless Approach for an E-Learning Platform</a>
-        </div>
-        <p>◦ Built a full-stack e-learning platform where users can purchase courses and learn using AWS Amplify, AppSync, and Stripe.</p>
-        <p class="technologies">Technologies: Amplify CLI, AWS Amplify React Library, GraphQL API, DynamoDB, Lambda, S3, React, Stripe.</p>
-    </div>
-    <!-- Project 5 -->
-    <div class="project">
-        <div class="project-title">
-            <a href="https://github.com/yourusername/Media-Insight" target="_blank">Media Insights</a>
-        </div>
-        <p>◦ Designed and developed ML models for Text-to-Image generation, Image description generation, and Text Summarization.</p>
-        <p>◦ Containerized the frontend, backend, database, and ML models.</p>
-        <p class="technologies">Technologies: Flask, Kafka, MongoDB, Docker, Python, React.</p>
-    </div>
-    <!-- Project 6 -->
-    <div class="project">
-        <div class="project-title">Computation Offloading of Resource Intensive Applications into Cloud</div>
-        <p>◦ Offloaded resource-intensive applications like video conversion from smartphones to the cloud.</p>
-        <p class="technologies">Technologies: Python, AWS EC2, S3.</p>
-    </div>
+
+    <footer>
+        <p>Created by [Your Name] | <a href="https://github.com/yourusername" target="_blank" style="color: white;">GitHub Profile</a></p>
+    </footer>
 </body>
 </html>
